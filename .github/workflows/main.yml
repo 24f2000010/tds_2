@@ -1,0 +1,21 @@
+name: Combined Tasks A and B
+on: [push]
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      # --- Task A Requirement ---
+      - name: 24f2000010@ds.study.iitm.ac.in
+        run: echo "This step is for Task A."
+
+      # --- Task B Requirements ---
+      - uses: actions/checkout@v4
+
+      - name: Cache dependencies for Task B
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm # example path
+          key: cache-1d8625c
+
+      - name: prime-cache-1d8625c
+        run: echo "This step is for Task B."
