@@ -1,5 +1,5 @@
 {
-  "name": ga2-8b8f52",
+  "name": "ga2-8b8f52",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "ghcr.io/devcontainers/features/python:1": {}
